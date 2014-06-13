@@ -20,6 +20,7 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+
   </head>
 <body ng-controller="MyCtrl">
     
@@ -27,18 +28,22 @@
       <div class="buttons">
         <button class="button button-icon icon ion-ios7-plus-outline" 
           ng-click="add()"></button>
-      <h1 class="title">GroceryList</h1>
+      <h1 class="title">TransitLabs GroceryList</h1>
       <div class="buttons">
       <button class="button" 
           ng-click="onItemDelete()">Clear</button>
         </div>
       </div>
     </ion-header-bar>
-
     <ion-content>
 
         <tick-list multiple="true" selected-icon="ion-checkmark-circled">
-            <tick-list-item ng-repeat="item in items" selected="{{item.checked}}" selected-icon="{{item.icon}}" model="item" ng-click="item.checked = !item.checked;">{{item.id}}</tick-list-item>
+            <tick-list-item ng-repeat="item in items" selected="{{item.checked}}" selected-icon="{{item.icon}}" model="item" ng-click="item.checked = !item.checked;">
+            <div class="row">
+              <div class="col">{{item.id}}</div>
+              <div class="col">{{item.amount}}</div>
+            </div>
+            </tick-list-item>
         </tick-list>
 
     </ion-content>

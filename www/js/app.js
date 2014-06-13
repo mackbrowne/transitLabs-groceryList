@@ -1,9 +1,15 @@
 angular.module('groceryList', ['ionic'])
 
 .controller('MyCtrl', function($scope, $ionicPopup) {
+
+  ionic.Platform.ready(function() {
+    // hide the status bar using the StatusBar plugin
+    StatusBar.hide();
+  });
   
   $scope.data = {
-    textBox: ""
+    textBox: "",
+    amount: ""
   };
   
   $scope.onItemDelete = function() {
@@ -16,13 +22,17 @@ angular.module('groceryList', ['ionic'])
   };
   
   $scope.items = [
-    { id: "Bread", checked: false },
-    { id: "Milk", checked: false }
+    { id: "Bread", amount:"2 Loafs", checked: false },
+    { id: "Milk", amount:"4L", checked: false },
+    { id: "Ground Beef", amount:"1LB", checked: false }
   ];  
   
   $scope.add = function(){
       $ionicPopup.show({
-     template: '<input type="text" ng-model="data.textBox">',
+     template: '<label class="item item-input"><span class="input-label">Item</span>' +
+     '<input type="text" ng-model="data.textBox"></label>' +
+     '<label class="item item-input"><span class="input-label">Amount</span>' +
+     '<input type="text" ng-model="data.amount"></label>',
      title: 'Add Item',
      subTitle: 'Write the grocery item in the box below',
      scope: $scope,
@@ -36,7 +46,7 @@ angular.module('groceryList', ['ionic'])
              //don't allow the user to close unless he enters wifi password
              e.preventDefault();
            } else {
-             $scope.items.push({id:$scope.data.textBox, checked:false});
+             $scope.items.push({id:$scope.data.textBox, amount:$scope.data.amount, checked:false});
              $scope.textBox = "";
              return;
            }

@@ -41,7 +41,8 @@
 		FEC8BC1A2D58480BABD57E1C /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B7CE01F97B4FB79DA005AB /* IonicKeyboard.m */; };
 		9D77DE42F4EF4872852FB6B2 /* UIWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A4AC64DCC4CD9B0D3A41C /* UIWebViewExtension.m */; };
 		5046B5655B184E91903B3037 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F504B437B54EB7A610878A /* CDVLogger.m */; };
-		097BEEF47B70418C952546BE /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803616E166545A592FB0B94 /* CDVDevice.m */; };
+		ACE7D43F9BD8488D8EFB58D3 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EE49929A0A4C96977414A0 /* CDVDevice.m */; };
+		8E0A203DD585441DB4777296 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A1FEF56E684D1FA32EE93F /* CDVStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,8 +113,10 @@
 		E2CE22B4FF7F41A785357EF3 /* UIWebViewExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIWebViewExtension.h"; path = "com.ionic.keyboard/UIWebViewExtension.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		58F504B437B54EB7A610878A /* CDVLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLogger.m"; path = "org.apache.cordova.console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		2C994FAE6BB64ADEB5AD5CE7 /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "org.apache.cordova.console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		2803616E166545A592FB0B94 /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		4E1409DAECC74CF7A29D72DC /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		07EE49929A0A4C96977414A0 /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		DFA58896960A4D9FB00B5586 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		24A1FEF56E684D1FA32EE93F /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		FBE8808400064551881FF555 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,8 +243,10 @@
 				E2CE22B4FF7F41A785357EF3 /* UIWebViewExtension.h */,
 				58F504B437B54EB7A610878A /* CDVLogger.m */,
 				2C994FAE6BB64ADEB5AD5CE7 /* CDVLogger.h */,
-				2803616E166545A592FB0B94 /* CDVDevice.m */,
-				4E1409DAECC74CF7A29D72DC /* CDVDevice.h */,
+				07EE49929A0A4C96977414A0 /* CDVDevice.m */,
+				DFA58896960A4D9FB00B5586 /* CDVDevice.h */,
+				24A1FEF56E684D1FA32EE93F /* CDVStatusBar.m */,
+				FBE8808400064551881FF555 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -439,7 +444,8 @@
 				FEC8BC1A2D58480BABD57E1C /* IonicKeyboard.m in Sources */,
 				9D77DE42F4EF4872852FB6B2 /* UIWebViewExtension.m in Sources */,
 				5046B5655B184E91903B3037 /* CDVLogger.m in Sources */,
-				097BEEF47B70418C952546BE /* CDVDevice.m in Sources */,
+				ACE7D43F9BD8488D8EFB58D3 /* CDVDevice.m in Sources */,
+				8E0A203DD585441DB4777296 /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
