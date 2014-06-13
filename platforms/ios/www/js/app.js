@@ -47,7 +47,8 @@ angular.module('groceryList', ['ionic'])
              e.preventDefault();
            } else {
              $scope.items.push({id:$scope.data.textBox, amount:$scope.data.amount, checked:false});
-             $scope.textBox = "";
+             $scope.data.textBox = "";
+             $scope.data.amount = "";
              return;
            }
          }

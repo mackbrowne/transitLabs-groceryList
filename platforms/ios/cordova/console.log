@@ -141,3 +141,10 @@ Terminating in response to SpringBoard's termination.
 2014-06-13 13:48:49.249 HelloCordova[64813:70b] Resetting plugins due to page load.
 2014-06-13 13:48:49.496 HelloCordova[64813:70b] Finished load of: file:///Users/mackbrowne/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/E0CB66B9-21EA-452D-BB0D-136C0053084D/HelloCordova.app/www/index.html
 2014-06-13 13:52:56.992 HelloCordova[64813:70b] Received memory warning.
+2014-06-13 13:55:29.394 HelloCordova[65928:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-13 13:55:29.404 HelloCordova[65928:70b] Unlimited access to network resources
+2014-06-13 13:55:29.450 HelloCordova[65928:70b] [CDVTimer][keyboard] 0.103056ms
+2014-06-13 13:55:29.458 HelloCordova[65928:70b] [CDVTimer][statusbar] 8.362055ms
+2014-06-13 13:55:29.459 HelloCordova[65928:70b] [CDVTimer][TotalPluginStartup] 9.395003ms
+2014-06-13 13:55:29.614 HelloCordova[65928:70b] Resetting plugins due to page load.
+2014-06-13 13:55:29.829 HelloCordova[65928:70b] Finished load of: file:///Users/mackbrowne/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/E0CB66B9-21EA-452D-BB0D-136C0053084D/HelloCordova.app/www/index.html
