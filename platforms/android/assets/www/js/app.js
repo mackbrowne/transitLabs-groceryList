@@ -23,7 +23,8 @@ angular.module('groceryList', ['ionic'])
   
   $scope.items = [
     { id: "Bread", amount:"2 Loafs", checked: false },
-    { id: "Milk", amount:"4L", checked: false }
+    { id: "Milk", amount:"4L", checked: false },
+    { id: "Ground Beef", amount:"1LB", checked: false }
   ];  
   
   $scope.add = function(){

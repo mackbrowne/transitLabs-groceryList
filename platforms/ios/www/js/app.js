@@ -23,7 +23,8 @@ angular.module('groceryList', ['ionic'])
   
   $scope.items = [
     { id: "Bread", amount:"2 Loafs", checked: false },
-    { id: "Milk", amount:"4L", checked: false }
+    { id: "Milk", amount:"4L", checked: false },
+    { id: "Ground Beef", amount:"1LB", checked: false }
   ];  
   
   $scope.add = function(){
@@ -45,7 +46,7 @@ angular.module('groceryList', ['ionic'])
              //don't allow the user to close unless he enters wifi password
              e.preventDefault();
            } else {
-             $scope.items.push({id:$scope.data.textBox, checked:false});
+             $scope.items.push({id:$scope.data.textBox, amount:$scope.data.amount, checked:false});
              $scope.textBox = "";
              return;
            }
